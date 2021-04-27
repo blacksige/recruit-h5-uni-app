@@ -1,0 +1,335 @@
+{
+	"easycom": {
+		// 下载安装的方式需要前面的"@/"，npm安装的方式无需"@/"
+		// 下载安装方式
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+		// npm安装方式
+		// "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages++
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "远信招聘",
+				"transparentTitle": "always"
+			}
+		},
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"transparentTitle": "always"
+			}
+		},
+		{
+			"path": "pages/register/index",
+			"style": {
+				"navigationBarTitleText": "注册",
+				"transparentTitle": "always"
+			}
+		},
+		{
+			"path": "pages/resume/list/index",
+			"style": {
+				"navigationBarTitleText": "我的简历",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "添加简历 ",
+							"fontSize": "14px",
+							"width": "auto",
+							"bounce": "none"
+						}]
+					}
+				},
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				} // 取消支付宝和钉钉小程序的iOS回弹,避免与下拉刷新冲突 (可统一配在 'globalStyle')
+			}
+		},
+		{
+			"path": "pages/resume/upload/index",
+			"style": {
+				"navigationBarTitleText": "导入简历"
+			}
+		},
+		{
+			"path": "pages/resume/add/index",
+			"style": {
+				"navigationBarTitleText": "新增简历",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "完成",
+							"fontSize": "15px",
+							"width": "auto"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/resume/edit/index",
+			"style": {
+				"navigationBarTitleText": "编辑简历",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "完成",
+							"fontSize": "14px",
+							"width": "auto"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/resume/detail/index",
+			"style": {
+				"navigationBarTitleText": "简历详情",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "编辑  ",
+							"fontSize": "14px",
+							"width": "auto"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/culture/index",
+			"style": {
+				"navigationBarTitleText": "企业文化"
+			}
+		},
+		{
+			"path": "pages/jobs/index/index",
+			"style": {
+				"navigationBarTitleText": "招聘职位"
+			}
+		},
+		{
+			"path": "pages/jobs/detail/index",
+			"style": {
+				"navigationBarTitleText": "职位信息"
+			}
+		},
+		{
+			"path": "pages/userCenter/index/index",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"transparentTitle": "always"
+			}
+		},
+		{
+			"path": "pages/userCenter/editName/index",
+			"style": {
+				"navigationBarTitleText": "修改姓名",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "确认修改",
+							"fontSize": "15px",
+							"width": "auto"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/userCenter/editPhone/index",
+			"style": {
+				"navigationBarTitleText": "修改联系方式",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "确认修改",
+							"fontSize": "15px",
+							"width": "auto"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/userCenter/editPassword/index",
+			"style": {
+				"navigationBarTitleText": "修改密码",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "确认修改",
+							"fontSize": "15px",
+							"width": "auto"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/userCenter/editEmail/index",
+			"style": {
+				"navigationBarTitleText": "修改邮箱",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "确认修改",
+							"fontSize": "15px",
+							"width": "auto"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/userCenter/certification/index",
+			"style": {
+				"navigationBarTitleText": "员工认证"
+			}
+		}, {
+			"path": "pages/resume/add/addExperience/addWork",
+			"style": {
+				"navigationBarTitleText": "工作经历",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "确认添加",
+							"fontSize": "15px",
+							"width": "auto"
+						}]
+					}
+				}
+			}
+
+		}, {
+			"path": "pages/resume/add/addExperience/addProject",
+			"style": {
+				"navigationBarTitleText": "项目经历",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "确认添加",
+							"fontSize": "15px",
+							"width": "auto"
+						}]
+					}
+				}
+			}
+
+		}, {
+			"path": "pages/resume/add/addExperience/addSchool",
+			"style": {
+				"navigationBarTitleText": "教育经历",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "确认添加",
+							"fontSize": "15px",
+							"width": "auto"
+						}]
+					}
+				}
+			}
+
+		}
+
+		, {
+			"path": "pages/resume/add/addExperience/addSkill",
+			"style": {
+				"navigationBarTitleText": "技能特长",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "确认添加",
+							"fontSize": "15px",
+							"width": "auto"
+						}]
+					}
+				}
+			}
+
+		}, {
+			"path": "pages/resume/edit/editExperience/editProject",
+			"style": {
+				"navigationBarTitleText": "项目经历",
+				"enablePullDownRefresh": false
+
+			}
+
+		}, {
+			"path": "pages/resume/edit/editExperience/editSchool",
+			"style": {
+				"navigationBarTitleText": "教育经历",
+				"enablePullDownRefresh": false
+
+			}
+
+		}, {
+			"path": "pages/resume/edit/editExperience/editSkill",
+			"style": {
+				"navigationBarTitleText": "个人技能",
+				"enablePullDownRefresh": false
+
+			}
+
+		}, {
+			"path": "pages/resume/edit/editExperience/editWork",
+			"style": {
+				"navigationBarTitleText": "工作经历",
+				"enablePullDownRefresh": false
+
+			}
+
+		}, {
+			"path": "pages/agreement/index",
+			"style": {
+				"navigationBarTitleText": "协议",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	"tabBar": {
+		"color": "#777777",
+		"selectedColor": "#1487D9",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"fontSize": "20rpx",
+		"list": [{
+				"pagePath": "pages/jobs/index/index",
+				"iconPath": "static/bottomIcon/zw.png",
+				"selectedIconPath": "static/bottomIcon/zwed.png",
+				"text": "职位"
+			},
+			{
+				"pagePath": "pages/culture/index",
+				"iconPath": "static/bottomIcon/gs.png",
+				"selectedIconPath": "static/bottomIcon/gsed.png",
+				"text": "企业文化"
+			}, {
+				"pagePath": "pages/resume/list/index",
+				"iconPath": "static/bottomIcon/jl.png",
+				"selectedIconPath": "static/bottomIcon/jled.png",
+				"text": "简历"
+			}, {
+				"pagePath": "pages/userCenter/index/index",
+				"iconPath": "static/bottomIcon/wd.png",
+				"selectedIconPath": "static/bottomIcon/wded.png",
+				"text": "我的"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "远信招聘",
+		"navigationBarBackgroundColor": "#4CA6F3",
+		"backgroundColor": "#ffffff"
+		
+	}
+}
